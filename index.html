@@ -1,6 +1,201 @@
 <!DOCTYPE html>
- <html>
-    <head>
-        <title>Agrinho</title>
-        <meta charset="utf-8"/>
-    </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura de Baixo Carbono - Agrinho 2026</title>
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f4;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seção de Destaque / Banner */
+        .banner {
+            background-color: #e8f5e9;
+            border-left: 6px solid #4caf50;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .banner h2 {
+            color: #1b5e20;
+            margin-top: 0;
+        }
+
+        /* Seções de Conteúdo */
+        .secao-info {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .secao-info h2 {
+            color: #1b5e20;
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Grid de Práticas Sustentáveis */
+        .grid-praticas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 6px;
+            border-top: 4px solid #2e7d32;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        /* Lista de Benefícios */
+        .lista-beneficios {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-beneficios li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .lista-beneficios li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .secao-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agricultura de Baixo Carbono</h1>
+        <p>Agrinho 2026: Sustentabilidade e Inovação no Campo</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="banner">
+            <h2>O Compromisso do Agrinho 2026</h2>
+            <p>O Programa Agrinho convida estudantes e a comunidade escolar a explorar soluções sustentáveis para o planeta. A <strong>Agricultura de Baixo Carbono</strong> engloba um conjunto de técnicas tecnológicas e de manejo que visam reduzir a emissão de gases de efeito estufa na produção agropecuária, garantindo a preservação ambiental para as próximas gerações.</p>
+        </section>
+
+        <section class="secao-info">
+            <h2>Principais Técnicas Sustentáveis</h2>
+            <p>A produção de alimentos pode caminhar lado a lado com a preservação do clima através de práticas como:</p>
+            
+            <div class="grid-praticas">
+                <div class="card">
+                    <h3>Sistema Plantio Direto (SPD)</h3>
+                    <p>Cultivo sem o revolvimento do solo através de aração. A palhada das culturas anteriores permanece sobre a terra, protegendo-a contra erosões e mantendo o carbono fixado no solo.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Integração Lavoura-Pecuária-Floresta (ILPF)</h3>
+                    <p>Estratégia que integra atividades agrícolas, pecuárias e florestais em uma mesma área. O plantio de árvores ajuda a capturar o CO₂ da atmosfera e oferece sombra para os animais.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Fixação Biológica de Nitrogênio (FBN)</h3>
+                    <p>Uso de microrganismos naturais capazes de fixar o nitrogênio do ar diretamente nas plantas, reduzindo significativamente o uso de fertilizantes químicos poluentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-info">
+            <h2>Por que adotar a Agricultura de Baixo Carbono?</h2>
+            <p>A transição para um modelo sustentável gera impactos positivos tanto para a natureza quanto para a viabilidade econômica do produtor rural:</p>
+            
+            <ul class="lista-beneficios">
+                <li><strong>Mitigação do Aquecimento Global:</strong> Reduz drasticamente as emissões de dióxido de carbono (CO₂) e metano (CH₄).</li>
+                <li><strong>Melhoria da Qualidade do Solo:</strong> Aumenta a matéria orgânica e a fertilidade natural da terra a longo prazo.</li>
+                <li><strong>Conservação da Água:</strong> Solos bem manejados retêm melhor a umidade, tornando as lavouras mais resistentes a períodos de seca.</li>
+                <li><strong>Eficiência Econômica:</strong> Otimiza o uso de recursos e insumos, gerando maior resiliência e estabilidade financeira.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Concurso Agrinho - Semeando Educação, Colhendo Sustentabilidade.</p>
+    </footer>
+
+</body>
+</html>
