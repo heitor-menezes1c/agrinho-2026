@@ -68,3 +68,181 @@
     </footer>
 </body>
 </html>
+:root {
+    --cor-primaria: #1b4d3e;   /* Verde escuro florestal */
+    --cor-secundaria: #f4f7f5; /* Fundo cinza esverdeado claro */
+    --cor-terciaria: #1a1a1a;  /* Texto escuro */
+    --cor-destaque: #e6a100;   /* Amarelo ouro para detalhes */
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--cor-primaria);
+    padding: 1.5rem 5%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.cabecalho__menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-destaque);
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+/* Seção Sobre */
+.secao-sobre {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.secao-sobre__titulo {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
+
+.texto-destaque {
+    color: var(--cor-destaque);
+}
+
+.secao-sobre__texto {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Pilares (ABC) usando Flexbox */
+.secao-pilares {
+    padding: 4rem 0;
+}
+
+.secao-pilares__titulo {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.secao-pilares__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    flex: 1 1 300px; /* Faz os cards se ajustarem sozinhos na tela */
+    max-width: 360px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--cor-primaria);
+}
+
+.card__titulo {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.card__texto {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Seção Fontes */
+.secao-fontes {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 2rem 0 4rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.secao-fontes__titulo {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.secao-fontes__texto {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.secao-fontes__lista {
+    list-style-position: inside;
+}
+
+.secao-fontes__item {
+    margin-bottom: 0.8rem;
+}
+
+.secao-fontes__link {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.secao-fontes__link:hover {
+    text-decoration: underline;
+    color: var(--cor-destaque);
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+.rodape__texto {
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .secao-sobre__titulo {
+        font-size: 2rem;
+    }
+}
