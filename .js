@@ -58,7 +58,7 @@ function updateStars(rating) {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Validação: exige ao menos uma estrela
+    // validação: exige ao menos uma estrela
     if (selectedRating === 0) {
         alert('Por favor, selecione uma quantidade de estrelas para avaliar.');
         return;
@@ -66,7 +66,7 @@ form.addEventListener('submit', (e) => {
 
     const comment = document.getElementById('comment').value;
 
-    // Objeto contendo os dados prontos para serem enviados ao backend
+    // objeto contendo os dados prontos para serem enviados ao backend
     const feedbackData = {
         rating: selectedRating,
         comment: comment
@@ -74,7 +74,7 @@ form.addEventListener('submit', (e) => {
 
     console.log('Dados da Avaliação:', feedbackData);
 
-    // Oculta o formulário e mostra a mensagem de agradecimento
+    // fecha o formulario e mostra a mensagem de agradecimento
     form.style.display = 'none';
     thankYouMessage.classList.remove('hidden');
 });
