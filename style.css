@@ -32,3 +32,58 @@ li{
     margin-bottom: 12px;
     font-size: 18px;
 }
+#btnModoEscuro{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btnModoEscuro:hover{
+    background: #246b45;
+}
+
+.dark{
+    background: #1b1b1b;
+    color: white;
+}
+
+.dark h1{
+    background: #111;
+}
+
+.dark footer{
+    background: #111;
+}
+
+.dark p,
+.dark li{
+    color: #eee;
+}
+
+input{
+    padding: 8px;
+    margin: 5px;
+}
+
+button{
+    padding: 8px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+#mensagem{
+    margin-top: 15px;
+    font-weight: bold;
+}
