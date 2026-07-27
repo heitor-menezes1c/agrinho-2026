@@ -59,7 +59,7 @@ li{
     margin-bottom: 20px;
 }
 
-/* Estrelas Interativas */
+/* estrelas */
 .star-rating {
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ li{
     transform: scale(1.15);
 }
 
-/* Campo de Texto */
+/*lugar do texto*/
 textarea {
     width: 100%;
     padding: 12px;
@@ -96,7 +96,7 @@ textarea:focus {
     border-color: #2a9d8f;
 }
 
-/* Botão de Envio */
+/*botao de envio*/
 button {
     width: 100%;
     background-color: #2a9d8f;
@@ -114,7 +114,7 @@ button:hover {
     background-color: #21867a;
 }
 
-/* Estado de Oculto/Visível */
+/*conseguir ver*/
 .hidden {
     display: none;
 }
