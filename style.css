@@ -4,7 +4,7 @@ body{
     color: #333;
     line-height: 1.6;
 }
-
+/*titulo*/
 h1{
     background-color: #2e598b;
     color: white;
@@ -12,11 +12,23 @@ h1{
     padding: 15px;
     margin-top: 20px;
 }
-
+/*paragrafo*/
 p{
     width: 90%;
     max-width: 900px;
     margin: 20px auto;
     text-align: justify;
+    font-size: 18px;
+}
+/*titulo da lista*/
+ul{
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding-left: 25px;
+}
+/*lista*/
+li{
+    margin-bottom: 12px;
     font-size: 18px;
 }
