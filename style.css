@@ -36,7 +36,7 @@ li{
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #2e8b57;
+    background: #3757af;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -45,7 +45,7 @@ li{
 }
 
 #btnModoEscuro:hover{
-    background: #246b45;
+    background: #223586;
 }
 
 .dark{
@@ -73,7 +73,7 @@ input{
 
 button{
     padding: 8px 15px;
-    background-color: green;
+    background-color: rgb(8, 196, 230);
     color: white;
     border: none;
     cursor: pointer;
