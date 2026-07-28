@@ -15,3 +15,4 @@ window.onload = function(){
     if(localStorage.getItem("tema") == "escuro"){
         document.body.classList.add("dark");
     }
+}
