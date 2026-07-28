@@ -11,7 +11,28 @@
 
 <body>
    <button id="btnModoEscuro" onclick="modoEscuro()">Modo Escuro</button>
+   <div class="rating-card">
+        <h2>Avalie a sua experiência</h2>
+        <p>Escolha de 1 a 5 estrelas e deixe seu comentário:</p>
 
+        <div class="stars" id="starContainer">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div id="ratingText" class="rating-text">Selecione uma nota</div>
+
+        <textarea id="commentBox" placeholder="Escreva seu comentário aqui (opcional)..." rows="4"></textarea>
+
+        <button id="submitBtn">Enviar Avaliação</button>
+
+        <div id="confirmationMsg" class="confirmation hidden">
+            🎉 <strong>Obrigado pelo feedback!</strong> Sua avaliação foi enviada com sucesso.
+        </div>
+    </div>
 
      <h1>O que é o ABC?</h1>
      
