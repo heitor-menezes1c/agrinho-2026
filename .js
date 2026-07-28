@@ -5,7 +5,7 @@ function modoEscuro() {
     // Salva a preferência no localStorage dependendo se a classe está ativa ou não
     if (document.body.classList.contains("dark")) {
         localStorage.setItem("tema", "escuro");
-    } else {
+    }else{
         localStorage.setItem("tema", "claro");
     }
 }
