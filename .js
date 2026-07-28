@@ -1,22 +1,21 @@
-function modoEscuro(){
-
+function modoEscuro() {
+    // Alterna a classe "dark" no body
     document.body.classList.toggle("dark");
 
-    if(document.body.classList.contains("dark")){
-        localStorage.setItem("tema","escuro");
-    }else{
-        localStorage.setItem("tema","claro");
+    // Salva a preferência no localStorage dependendo se a classe está ativa ou não
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
     }
-
 }
 
-window.onload = function(){
-
-    if(localStorage.getItem("tema") == "escuro"){
+// Executa assim que a página carrega
+window.onload = function() {
+    if (localStorage.getItem("tema") === "escuro") {
         document.body.classList.add("dark");
     }
-
-}
+};
 // Estado inicial das contagens e da escolha do usuario
 let likes = 0;
 let dislikes = 0;
