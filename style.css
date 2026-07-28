@@ -4,15 +4,15 @@ body{
     color: #333;
     line-height: 1.6;
 }
-/*titulo*/
+
 h1{
-    background-color: #2e598b;
+    background-color: #2e8b57;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
-/*paragrafo*/
+
 p{
     width: 90%;
     max-width: 900px;
@@ -20,23 +20,24 @@ p{
     text-align: justify;
     font-size: 18px;
 }
-/*titulo da lista*/
+
 ul{
     width: 90%;
     max-width: 900px;
     margin: 20px auto;
     padding-left: 25px;
 }
-/*lista*/
+
 li{
     margin-bottom: 12px;
     font-size: 18px;
 }
+
 #btnModoEscuro{
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #1a1f6d;
+    background: #2e8b57;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -45,7 +46,7 @@ li{
 }
 
 #btnModoEscuro:hover{
-    background: #03143a;
+    background: #246b45;
 }
 
 .dark{
@@ -73,71 +74,17 @@ input{
 
 button{
     padding: 8px 15px;
-    background-color: rgb(18, 160, 196);
+    background-color: green;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(26, 9, 100);
+    background-color: darkgreen;
 }
 
 #mensagem{
     margin-top: 15px;
     font-weight: bold;
-}
-.rating-container {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-}
-
-.rate-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    border: 2px solid #e0e0e0;
-    border-radius: 25px;
-    background-color: #ffffff;
-    color: #444444;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-}
-
-.rate-btn:hover {
-    background-color: #f5f5f5;
-    transform: translateY(-2px);
-}
-
-.rate-btn:active {
-    transform: translateY(0);
-}
-
-/* estado ativo do Like */
-.rate-btn.active-like {
-    background-color: #e8f5e9;
-    border-color: #2e7d32;
-    color: #2e7d32;
-}
-
-/* estado ativo do dislike */
-.rate-btn.active-dislike {
-    background-color: #ffebee;
-    border-color: #c62828;
-    color: #c62828;
-}
-
-.count {
-    background-color: rgba(0, 0, 0, 0.06);
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 0.85rem;
 }
