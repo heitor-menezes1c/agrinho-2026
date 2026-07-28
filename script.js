@@ -9,21 +9,3 @@ function modoEscuro(){
     }
 
 }
-
-window.onload = function(){
-
-    if(localStorage.getItem("tema") == "escuro"){
-        document.body.classList.add("dark");
-    }
-
-}
-
-function mostrar(){
-
-    let nome = document.getElementById("nome").value;
-    let idade = document.getElementById("idade").value;
-
-    document.getElementById("mensagem").innerHTML =
-    "Olá, " + nome + "! Você tem " + idade + " anos.";
-
-}
