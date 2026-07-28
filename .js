@@ -1,8 +1,7 @@
 function modoEscuro() {
-    // Alterna a classe "dark" no body
+    
     document.body.classList.toggle("dark");
 
-    // Salva a preferência no localStorage dependendo se a classe está ativa ou não
     if (document.body.classList.contains("dark")) {
         localStorage.setItem("tema", "escuro");
     }else{
@@ -10,7 +9,6 @@ function modoEscuro() {
     }
 }
 
-// Executa assim que a página carrega
 window.onload = function() {
     if (localStorage.getItem("tema") === "escuro") {
         document.body.classList.add("dark");
