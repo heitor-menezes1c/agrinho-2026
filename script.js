@@ -74,4 +74,4 @@ dislikeBtn.addEventListener('click', () => {
 function updateUI() {
     likeCount.textContent = likes;
     dislikeCount.textContent = dislikes;
-}
+};
